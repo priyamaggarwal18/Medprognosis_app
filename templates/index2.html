@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="U-Move a smarter, faster, greener way to get around campus.">
+<meta name="keywords" content="u-move,chitkara,university,HTML, CSS, JavaScript">
+<meta name="author" content="Dev Dynamos">
+<title>MedPrognosis: Foresight for medical decisions</title>
+<link rel="icon" type="image/png" href="images/logopng.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Bruno Ace' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head> 
+
+<body onload="loader_off()">
+<div id="loading">
+</div>
+<!-- Navbar section -->
+
+    <header class="header sticky">
+        <a href="#home">
+        <img src="../static/css/images/logo2.png" alt="U-move logo" class="logo"></a>
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="li-all"><a class="navbar-link" href="#home">Home</a></li>
+                <li class="li-all"><a class="navbar-link" href="#about">About</a></li>
+                <li class="li-all"><a class="navbar-link" href="#donate">Donate</a></li>
+                <li class="li-all"><a class="navbar-link" href="#contact">Contact Us</a></li>
+                <a href="#team"><button class="btn">Meet Team</button></a>
+            </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+<!-- Hero Section -->
+    <section class="section-hero" id="home">
+        <div class="grid">
+            <div class="block block1">
+                <h3>INTRODUCING</h3>
+                <p>MedPrognosis a platform that offers personalized health assessments based on symptoms or risk factors, providing users with accurate 
+                    insights into potential health risks. With cutting-edge algorithms and a vast medical database, we empower individuals to take control 
+                    of their well-being.</p>
+                <button class="btn common-button"
+                onclick="window.location.href = '{{ url_for('insurance') }}';"
+                >Predict Life Insurance Price -></button>
+            </div>
+            <div class="block block2" onclick="window.location.href = '{{ url_for('openn') }}';">
+                <div>
+                <p>Heart Disease</p>
+                <p>prediction</p>
+                </div>
+                <div>
+                    <p class="acc">98% acc.</p>
+                    <p>try -></p>
+                </div>
+                
+            </div>
+            <div class="block block3" onclick="window.location.href = '{{ url_for('hello') }}';">
+                <div>
+                    <p>Kidney Disease</p>
+                    <p>prediction</p>
+                    </div>
+                    <div>
+                        <p class="acc">98% acc.</p>
+                        <p>try -></p>
+                    </div>
+            </div>
+            <div class="block block4" onclick="window.location.href = '{{ url_for('options') }}';">
+                <div>
+                    <p>Breast Cancer</p>
+                    <p>prediction</p>
+                    </div>
+                    <div>
+                        <p class="acc">94% acc.</p>
+                        <p>try -></p>
+                    </div>
+            </div>
+            <div class="block block5" onclick="window.location.href = '{{ url_for('openit') }}';">
+                <div>
+                    <p>Diabetes</p>
+                    <p>prediction</p>
+                    </div>
+                    <div>
+                        <p class="acc">98% acc.</p>
+                        <p id="about">try -></p >
+                    </div>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+    <section class="section-about">
+        <!-- left side of sabout section -->
+        <div class="left-side">
+           <img src="../static/css/images/demo (2).png" alt="demo">
+        </div>
+        <div class="right-side">
+            <h2>ABOUT</h2>
+            <p>With our cutting-edge algorithms and extensive medical database, we empower you to take control of your well-being. Simply input your 
+                symptoms or risk factors, and our intelligent system will analyze your data to provide accurate insights into potential health risks.
+                 Whether you're curious about a nagging symptom or want to stay ahead of potential illnesses, MedPrognosis is here to guide you on your
+                 journey to better health.</p>
+            <button class="btn common-button" id="team" >Learn More</button>
+        </div>
+    </section>
+<!-- Team Section -->
+    <!-- <section class="Section-Services" >
+        <h2>Meet Our Team</h2>
+        <p class="inner-text">lorem ipsum lorem ipsum</p>
+        <div class="section-services-task">
+        <div class="task-1">
+            <img src="static\css\images\team-1.svg">
+            <h3>Priyam</h3>
+            <p>2210992098</p>
+        </div>
+        <div class="task-2">
+            <img src="images/1.png">
+            <h3>Rashika</h3>
+            <p>2210992098</p>
+        </div> 
+        <div class="task-3">
+            <img src="images/3.png">
+            <h3>Priyanshi</h3>
+            <p>2210992098</p>
+        </div>
+        <div class="task-4" >
+            <img src="images/3.png">
+            <h3>Sakshi</h3>
+            <p>2210992098</p>
+        </div>
+        
+    </section>
+<div id="donate"></div>-->
+<!-- Section for donate -->
+<section class="section-donate" >
+    <!-- left side of sabout section -->
+    <div class="right-side">
+        <h2>Donate for a Cause</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptate provident, voluptatem impedit nisi molestiae reprehenderit sit culpa explicabo eum quisquam, ad dolore voluptatibus perferendis delectus beatae. Eligendi, porro nesciunt.</p>
+        <button class="btn common-button">Donate Now</button>
+    </div>
+    <div class="left-side">
+        <img src="../static/css/images/scanner.svg" alt="demo">
+     </div>
+</section>
+<!-- Section for contact us -->
+        <section id='contact' class="contact">
+            <h2 class="text-center">Contact Us</h2>
+            <form method="post" action="" name="contact-form" class="form" id="contact-form">
+                <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+                <input class="form-input" type="phone" name="phone" id="phone" placeholder="Enter your Phone No.">
+                <input class="form-input" type="email" name="email" id="email" placeholder="Enter your E-mail">
+                <textarea class="form-input" name="message" id="message" cols="20" rows="5"
+                    placeholder="enter your message"></textarea>
+                <input type="submit" class="btnsub" value="Submit" id="submit">
+            </form>
+        </section>
+        <footer class="myfooter">
+            <p>@copyright 2024 - Medprognosis Project</p>
+        </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+
+</html>

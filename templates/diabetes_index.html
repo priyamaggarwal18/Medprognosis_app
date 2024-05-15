@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="../static/css/diabetes_style.css">
+</head>
+<body>
+    <h1>Please enter data</h1>
+<div class="container">
+    <form action="/predict5" method="post">
+        <div>
+            <label for="radius_mean">PREGNANCIES:</label><br>
+            <input type="text" id="radius_mean" name="radius_mean" placeholder="Pregnancies" required>
+        </div>
+        <div>
+            <label for="texture_mean">GLUCOSE:</label><br>
+            <input type="text" id="texture_mean" name="texture_mean" placeholder="Glucose" required>
+        </div>
+        <div>
+            <label for="perimeter_mean">BLOOD PRESSURE:</label><br>
+            <input type="text" id="perimeter_mean" name="perimeter_mean" placeholder="Blood pressure" required>
+        </div>
+        <div>
+            <label for="area_mean">SKIN THICKNESS:</label><br>
+            <input type="text" id="area_mean" name="area_mean" placeholder="Skin thickness" required>
+        </div>
+        <div>
+            <label for="smoothness_mean">INSULIN:</label><br>
+            <input type="text" id="smoothness_mean" name="smoothness_mean" placeholder="Insulin" required>
+        </div>
+        <div>
+            <label for="compactness_mean">BMI:</label><br>
+            <input type="text" id="compactness_mean" name="compactness_mean" placeholder="Body mass index" required>
+        </div>
+        <div>
+            <label for="concavity_mean">DIABETES PEDIGREE FUNCTION:</label><br>
+            <input type="text" id="concavity_mean" name="concavity_mean" placeholder="Diabetes Pedigree Function" required>
+        </div>
+        <div>
+            <label for="concave_points_mean">AGE:</label><br>
+            <input type="text" id="concave_points_mean" name="concave_points_mean" placeholder="Age" required>
+        </div>
+        <div>
+            <input type="submit" value="Predict">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

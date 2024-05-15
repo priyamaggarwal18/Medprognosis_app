@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="../static/css/kidney_style.css">
+</head>
+<body>
+    <h1>Please enter data</h1>
+<div class="container">
+    <form action="/predict4" method="post">
+        <div>
+            <label for="radius_mean">AGE:</label><br>
+            <input type="text" id="radius_mean" name="radius_mean" placeholder="Age" required>
+        </div>
+        <div>
+            <label for="texture_mean">Blood Pressure:</label><br>
+            <input type="text" id="texture_mean" name="texture_mean" placeholder="blood pressure" required>
+        </div>
+        <div>
+            <label for="perimeter_mean">Specific Gravity:</label><br>
+            <input type="text" id="perimeter_mean" name="perimeter_mean" placeholder="Specific Gravity" required>
+        </div>
+        <div>
+            <label for="area_mean">Albumin:</label><br>
+            <input type="text" id="area_mean" name="area_mean" placeholder="Resting bloop pressure" required>
+        </div>
+        <div>
+            <label for="smoothness_mean">Sugar:</label><br>
+            <input type="text" id="smoothness_mean" name="smoothness_mean" placeholder="Serum cholestrol level" required>
+        </div>
+        <div>
+            <label for="compactness_mean">Blood Glucose:</label><br>
+            <input type="text" id="compactness_mean" name="compactness_mean" placeholder="Fasting blood sugar level" required>
+        </div>
+        <div>
+            <label for="concavity_mean">Blood Urea:</label><br>
+            <input type="text" id="concavity_mean" name="concavity_mean" placeholder="Resting electrocardiographic results" required>
+        </div>
+        <div>
+            <label for="concave_points_mean">TSerum Creatinine:</label><br>
+            <input type="text" id="concave_points_mean" name="concave_points_mean" placeholder="Maximum heart rate achieved during exercise" required>
+        </div>
+        <div>
+            <label for="symmetry_mean">Sodium:</label><br>
+            <input type="text" id="symmetry_mean" name="symmetry_mean" placeholder="Exercise-induced agina" required>
+        </div>
+        <div>
+            <label for="fractal_dimension_mean">Potassium:</label><br>
+            <input type="text" id="fractal_dimension_mean" name="fractal_dimension_mean" placeholder="ST depression induced by exercise relative to rest" required>
+        </div>
+        <div>
+            <label for="radius_se">Hb:</label><br>
+            <input type="text" id="radius_se" name="radius_se" placeholder="Slope of the peak exercise ST segment" required>
+        </div>
+        <div>
+            <label for="texture_se">Red Blood Cells:</label><br>
+            <input type="text" id="texture_se" name="texture_se" placeholder="Number of major vessels (0-3) colored by fluoroscopy." required>
+        </div>
+        <div>
+            <label for="perimeter_se">Pus cells:</label><br>
+            <input type="text" id="perimeter_se" name="perimeter_se" placeholder="Thallium stress test result" required>
+        </div>
+        <div>
+            <label for="area_se">Pus cells clumps:</label><br>
+            <input type="text" id="area_se" name="area_se" placeholder="Standard error of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="smoothness_se">Bacteria:</label><br>
+            <input type="text" id="smoothness_se" name="smoothness_se" placeholder="Standard error of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="compactness_se">Packed cell volume:</label><br>
+            <input type="text" id="compactness_se" name="compactness_se" placeholder="Standard error of perimeter^2 / area - 1.0" required>
+        </div>
+        <div>
+            <label for="concavity_se">White blood cell count:</label><br>
+            <input type="text" id="concavity_se" name="concavity_se" placeholder="Standard error of severity of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="concave_points_se">Red blood cell count:</label><br>
+            <input type="text" id="concave_points_se" name="concave_points_se" placeholder="Standard error for number of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="symmetry_se">Hypertension:</label><br>
+            <input type="text" id="symmetry_se" name="symmetry_se" placeholder="Standard error for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="fractal_dimension_se">Diabetes mellitos:</label><br>
+            <input type="text" id="fractal_dimension_se" name="fractal_dimension_se" placeholder="Standard error for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="radius_worst">Coronary artery disease:</label><br>
+            <input type="text" id="radius_worst" name="radius_worst" placeholder="Worst mean of distances from center to points on the perimeter" required>
+        </div>
+        <div>
+            <label for="texture_worst">TAppetite:</label><br>
+            <input type="text" id="texture_worst" name="texture_worst" placeholder="Worst standard deviation of gray-scale values" required>
+        </div>
+        <div>
+            <label for="perimeter_worst">Peda_edema:</label><br>
+            <input type="text" id="perimeter_worst" name="perimeter_worst" placeholder="Worst mean size of the core tumor" required>
+        </div>
+        <div>
+            <label for="area_worst">Anemia:</label><br>
+            <input type="text" id="area_worst" name="area_worst" placeholder="Worst mean of local variation in radius lengths" required>
+        </div>
+         <!-- Add the remaining input fields similarly -->
+        <div>
+            <input type="submit" value="Predict">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

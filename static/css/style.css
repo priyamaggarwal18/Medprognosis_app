@@ -1,0 +1,771 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white url('images/loaders.gif') no-repeat center;
+    z-index: 999999;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: white;
+    color: black;
+    transition: all 0.6s ease;
+}
+
+/* .dark-mode {
+    background-color: black;
+    color: white;
+    transition: all 0.6s ease;
+} */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* css for navigation bar */
+
+.myfooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020040;
+}
+
+.myfooter p{
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Gotham';
+    margin: 2rem;
+}
+
+.header {
+    padding: 0 6rem;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#020040;
+    cursor: pointer;
+    z-index: 999;
+    margin-bottom: 2rem;
+}
+
+.sticky{
+    position:fixed;
+    left:0;
+    left: 0;
+    width: 100%;
+
+}
+
+.header .logo{
+    height: 6rem;
+}
+
+
+.navbar-list {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+    font-family: 'Gotham';
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+    color: #1099E9;
+}
+
+
+.navbar-link:hover {
+    color: white
+}
+
+.navbar-link::after {
+    content: '';
+    height: 4px;
+    border-radius: 50px;
+    width: 0; /* Start with a width of 0 */
+    background: #1099E9;
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    opacity: 0;
+    transition: all 0.7s;
+    pointer-events: none;
+}
+
+.navbar-link:hover::after {
+    width: 100%; /* Increase the width to 100% on hover */
+    opacity: 1;
+}
+.btn {
+    font-size: 2rem;
+    background: #1099E9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Gotham';
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.btn:hover {
+    background: rgba(0, 162, 255, 0.737);
+    color: white;
+    transition: .6s;
+}
+
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-nav-icon {
+    width: 4rem;
+    height: 4rem;
+    color: white;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+/* ===========================================
+Hero section
+======================================= */
+.section-hero{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    width: 90vw;
+    height: 80vh;
+    margin: 0 5rem;
+    margin-top: 10rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 15px;
+    
+}
+
+
+.block {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 30px;
+
+}
+
+.block1 {
+    grid-column: 1 / span 4;
+    background-color: black;
+    background: url(images/main_banner.svg) no-repeat center;
+    background-size:cover;
+    text-align: left;
+    font-family: gotham;
+    color:white;
+    padding-top: 5rem;
+    padding-left: 5rem;
+    border-top-left-radius: 0px; 
+    border-top-right-radius: 0px;  
+}
+
+.block1 h3{
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.block1 p{
+    opacity: 0.7;
+    font-size: 20px;
+    width: 40vw;
+    margin-bottom: 20px;
+}
+
+.block2{
+    background-color: #EFDB68;
+    background: url(images/heart.png) no-repeat center;
+    background-size:cover;
+    font-family: 'gotham';
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.acc{
+    font-size: 22px;
+}
+
+.block3{
+    background-color: #A3DBC2;
+    background: url(images/kidney.png) no-repeat center;
+    background-size:cover;
+    font-family: 'gotham';
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.block4{
+    background-color: #E8C1D4;
+    background: url(images/breast.png) no-repeat center;
+    background-size:cover;
+    font-family: 'gotham';
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.block5{
+    background-color:#94BCF7;
+    background: url(images/diabeties.png) no-repeat center;
+    background-size:cover;
+    font-family: 'gotham';
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.525);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+@media (max-width: 1129px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .block1{
+        display: none;
+    }
+
+    .section-hero{
+        margin-bottom: 20rem;
+    }
+
+}
+
+/* section for about */
+.section-about{
+    width: 100%;
+    height: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5rem 20rem;
+    justify-content: center;
+    background-color: #020040;
+    align-items: center;
+    color: white;
+}
+
+.section-about .left-side img{
+    border-radius: 5rem;
+    height: 350px;
+}
+
+.section-about .right-side{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-about .right-side h2{
+    font-family: 'Gotham';
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.section-about .right-side p{
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 550;
+    margin-bottom: 3rem;
+    width: 50rem;
+}
+
+.section-about .right-side .common-button{
+    width: 30rem;
+    font-size: 1.8rem;
+}
+
+/* section for services */
+.Section-Services{
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 20rem;
+}
+.Section-Services h2{
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: #020040;
+    font-family: 'Gotham';
+}
+.Section-Services .inner-text{
+    width: 40rem;
+    height: 7rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    margin: auto;
+    font-family: 'Open Sans';
+    color: #020040;
+    font-size: 2rem;
+
+}
+.Section-Services p{
+    margin:5rem;
+    text-align: center;
+    font-family: 'Open Sans';
+    color: black;
+    font-size: 1.25rem;
+    /* padding: 1.5rem; */
+    font-weight: 200;
+
+}
+
+.Section-Services .section-services-task{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap:2rem;
+    grid-row-gap: 2rem;
+    height: 400px;
+}
+.Section-Services .section-services-task .task-1,
+.Section-Services .section-services-task .task-2,
+.Section-Services .section-services-task .task-3,
+.Section-Services .section-services-task .task-4 {
+    background-color: #020040;
+    text-align: center;
+    border-radius: 5rem;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+
+.Section-Services .section-services-task .task-1 img,
+.Section-Services .section-services-task .task-2 img,
+.Section-Services .section-services-task .task-3 img,
+.Section-Services .section-services-task .task-4 img {
+    height: 40vh;
+    justify-content: center;
+    border-radius: 5rem;
+    width: 100%;
+}
+
+.Section-Services .section-services-task .task-1 h3,
+.Section-Services .section-services-task .task-2 h3,
+.Section-Services .section-services-task .task-3 h3,
+.Section-Services .section-services-task .task-4 h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Open Sans';
+    padding: 0.25rem;
+    font-weight: 900;
+    color: white;
+}
+
+.Section-Services .section-services-task .task-1 p,
+.Section-Services .section-services-task .task-2 p,
+.Section-Services .section-services-task .task-3 p,
+.Section-Services .section-services-task .task-4 p {
+    margin: 1rem 3rem;
+    font-family: 'Open Sans';
+    color: white;
+}
+
+/* donation section css */
+.section-donate{
+    width: 100%;
+    height: 70rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:  20rem;
+    gap: 10rem;
+    color: black;
+}
+
+.section-donate .left-side img{
+    height: 500px;
+}
+
+.section-donate .right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-donate .right-side h2{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+    color: #020040;
+    font-family: 'Gotham';
+}
+
+.section-donate .right-side p{
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 550;
+    margin-bottom: 3rem;
+    width: 50rem;
+}
+
+.section-donate .right-side .common-button{
+    width: 30rem;
+    font-size: 1.8rem;
+}
+
+    
+/* section for contact  */
+.contact {
+    background-color: #020040;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+    font-family: 'Gotham';
+    font-size: 40px;
+}
+
+.form {
+    max-width: 500px;
+    margin: 25px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    margin: 18px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnsub {
+    width: 200px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #1099E9;
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    font-weight: 1000;
+    font-family: 'Gotham';
+    transition: .6s;
+}
+
+.btnsub:hover {
+    font-size: 23px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.529);
+    border-radius: 50px;
+    border: none;
+    padding: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.text-footer {
+    text-align: center;
+    padding-top: 30px 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    color: white;
+    background-color: black;
+
+}
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+/* 1em=16px */
+/* 1rem=10px */
+@media (max-width: 62em) {
+    
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        color: white;
+    }
+
+    .header {
+        position:fixed;
+    }
+
+    .header .logo {
+        height: 30%;
+    }
+
+    .navbar {
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        /* to get the tranisition  */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-link:link,
+    .navbar-link:visited {
+        font-size: 2.5rem;
+    }
+
+    .header .logo {
+        height: 6rem;
+    }
+
+    .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+    }
+
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+    }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+    .header {
+        padding: 0 2.4rem;
+    }
+
+    .header .logo {
+        height: 60%;
+    }
+}
+
+.header .logo {
+    height: 6rem;
+}
+
+
+/* resposnive for laptop */
+@media (max-width:1280px){
+    .section-hero,
+        .section-about {
+            padding: 2rem 11rem;
+        }
+    html{
+        font-size: 50%;
+    }
+    .section-hero .hero-rightside img {
+        height: 60rem;
+        margin-top: 2rem;
+        visibility: visible;
+    }
+}
+/* Responsive for tablets */
+@media (max-width:980px) {
+
+    .section-hero,
+    .section-about,.Section-Services {
+        padding: 2rem 6rem;
+    }
+    .section-hero .hero-rightside img {
+        height: 50rem;
+        margin: 0;
+        margin-left: -11rem;
+        visibility: visible;
+    }
+    .section-hero .hero-leftside h1 {
+        width: 35rem;
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    .section-hero .hero-leftside p {
+        width: 35rem;
+        font-size: 1.5rem;
+
+    }
+    .section-about .left-side img{
+        justify-content: center;
+    }
+    .section-about .right-side p{
+        width: 35rem;
+    }
+    /* services section */
+    .Section-Services{
+        height: auto;
+    }
+    .Section-Services h2{
+        width: auto;
+        padding: 0 1rem;
+        padding-top: 5rem;
+        
+
+    }
+    .Section-Services .section-services-task{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 5rem;;
+        padding: 0;
+    }
+    .Section-Services .section-services-task .task-1 ,
+    .Section-Services .section-services-task .task-2 ,
+    .Section-Services .section-services-task .task-3 {
+        margin-left: 0;
+        margin-bottom: 10rem;
+        width: 80vw;
+    
+    }
+    .header .btn{
+        font-size: 3rem;
+
+    }
+
+    .section-hero{
+        margin-bottom: 20rem;
+    }
+
+    .section-about{
+        display: flex;
+        flex-direction: row;
+        padding: 20rem 10rem;
+        gap: 25px;
+    }
+
+}
+
+/* making responsive for mobile */
+@media (max-width:770px){
+    /* hero section */
+    .section-hero,.section-about{
+        padding: 2rem 3rem;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-hero{
+        
+        margin-bottom: 20rem;
+    }
+    .section-hero .hero-leftside{
+        width: 100%;
+        margin: 20px;
+    }
+    .section-hero .hero-rightside img{
+        height:37rem;
+        margin:0;
+        margin-top: 0;
+        visibility: visible;
+    }
+    .section-hero .hero-leftside h1{
+        width: 35rem;
+        font-size: 4rem;
+        line-height: 4rem ;
+        margin-top: 10rem;
+    }
+    .section-hero .hero-leftside p {
+        width: 35rem;
+        font-size: 2rem;
+        
+    }
+    .Section-Services .section-services-task .task-1 p,
+    .Section-Services .section-services-task .task-2 p,
+    .Section-Services .section-services-task .task-3 p {
+        padding: 2rem 3rem;
+    font-size: 2rem;}
+    .Section-Services .section-services-task .task-1 h3,
+        .Section-Services .section-services-task .task-2 h3,
+        .Section-Services .section-services-task .task-3 h3 {
+            font-size: 4rem;
+        }
+}

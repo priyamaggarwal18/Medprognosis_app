@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="../static/css/style2.css">
+</head>
+<body>
+    <h1>Please enter data</h1>
+<div class="container">
+    <form action="/predict" method="post">
+        <div>
+            <label for="radius_mean">Radius Mean:</label><br>
+            <input type="text" id="radius_mean" name="radius_mean" placeholder="Mean of distances from center to points on the perimeter" required>
+        </div>
+        <div>
+            <label for="texture_mean">Texture Mean:</label><br>
+            <input type="text" id="texture_mean" name="texture_mean" placeholder="Standard deviation of gray-scale values" required>
+        </div>
+        <div>
+            <label for="perimeter_mean">Perimeter Mean:</label><br>
+            <input type="text" id="perimeter_mean" name="perimeter_mean" placeholder="Mean size of the core tumor" required>
+        </div>
+        <div>
+            <label for="area_mean">Area Mean:</label><br>
+            <input type="text" id="area_mean" name="area_mean" placeholder="Mean of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="smoothness_mean">Smoothness Mean:</label><br>
+            <input type="text" id="smoothness_mean" name="smoothness_mean" placeholder="Mean of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="compactness_mean">Compactness Mean:</label><br>
+            <input type="text" id="compactness_mean" name="compactness_mean" placeholder="Mean of perimeter^2 / area - 1.0" required>
+        </div>
+        <div>
+            <label for="concavity_mean">Concavity Mean:</label><br>
+            <input type="text" id="concavity_mean" name="concavity_mean" placeholder="Mean of severity of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="concave_points_mean">Concave Points Mean:</label><br>
+            <input type="text" id="concave_points_mean" name="concave_points_mean" placeholder="Mean for number of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="symmetry_mean">Symmetry Mean:</label><br>
+            <input type="text" id="symmetry_mean" name="symmetry_mean" placeholder="Mean for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="fractal_dimension_mean">Fractal Dimension Mean:</label><br>
+            <input type="text" id="fractal_dimension_mean" name="fractal_dimension_mean" placeholder="Mean for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="radius_se">Radius SE:</label><br>
+            <input type="text" id="radius_se" name="radius_se" placeholder="Standard error for distances from center to points on the perimeter" required>
+        </div>
+        <div>
+            <label for="texture_se">Texture SE:</label><br>
+            <input type="text" id="texture_se" name="texture_se" placeholder="Standard error of gray-scale values" required>
+        </div>
+        <div>
+            <label for="perimeter_se">Perimeter SE:</label><br>
+            <input type="text" id="perimeter_se" name="perimeter_se" placeholder="Standard error size of the core tumor" required>
+        </div>
+        <div>
+            <label for="area_se">Area SE:</label><br>
+            <input type="text" id="area_se" name="area_se" placeholder="Standard error of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="smoothness_se">Smoothness SE:</label><br>
+            <input type="text" id="smoothness_se" name="smoothness_se" placeholder="Standard error of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="compactness_se">Compactness SE:</label><br>
+            <input type="text" id="compactness_se" name="compactness_se" placeholder="Standard error of perimeter^2 / area - 1.0" required>
+        </div>
+        <div>
+            <label for="concavity_se">Concavity SE:</label><br>
+            <input type="text" id="concavity_se" name="concavity_se" placeholder="Standard error of severity of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="concave_points_se">Concave Points SE:</label><br>
+            <input type="text" id="concave_points_se" name="concave_points_se" placeholder="Standard error for number of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="symmetry_se">Symmetry SE:</label><br>
+            <input type="text" id="symmetry_se" name="symmetry_se" placeholder="Standard error for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="fractal_dimension_se">Fractal Dimension SE:</label><br>
+            <input type="text" id="fractal_dimension_se" name="fractal_dimension_se" placeholder="Standard error for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="radius_worst">Radius Worst:</label><br>
+            <input type="text" id="radius_worst" name="radius_worst" placeholder="Worst mean of distances from center to points on the perimeter" required>
+        </div>
+        <div>
+            <label for="texture_worst">Texture Worst:</label><br>
+            <input type="text" id="texture_worst" name="texture_worst" placeholder="Worst standard deviation of gray-scale values" required>
+        </div>
+        <div>
+            <label for="perimeter_worst">Perimeter Worst:</label><br>
+            <input type="text" id="perimeter_worst" name="perimeter_worst" placeholder="Worst mean size of the core tumor" required>
+        </div>
+        <div>
+            <label for="area_worst">Area Worst:</label><br>
+            <input type="text" id="area_worst" name="area_worst" placeholder="Worst mean of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="smoothness_worst">Smoothness Worst:</label><br>
+            <input type="text" id="smoothness_worst" name="smoothness_worst" placeholder="Worst mean of local variation in radius lengths" required>
+        </div>
+        <div>
+            <label for="compactness_worst">Compactness Worst:</label><br>
+            <input type="text" id="compactness_worst" name="compactness_worst" placeholder="Worst mean of perimeter^2 / area - 1.0" required>
+        </div>
+        <div>
+            <label for="concavity_worst">Concavity Worst:</label><br>
+            <input type="text" id="concavity_worst" name="concavity_worst" placeholder="Worst mean of severity of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="concave_points_worst">Concave Points Worst:</label><br>
+            <input type="text" id="concave_points_worst" name="concave_points_worst" placeholder="Worst mean for number of concave portions of the contour" required>
+        </div>
+        <div>
+            <label for="symmetry_worst">Symmetry Worst:</label><br>
+            <input type="text" id="symmetry_worst" name="symmetry_worst" placeholder="Worst mean for 'coastline approximation' - 1" required>
+        </div>
+        <div>
+            <label for="fractal_dimension_worst">Fractal Dimension Worst:</label><br>
+            <input type="text" id="fractal_dimension_worst" name="fractal_dimension_worst" placeholder="Worst mean for 'coastline approximation' - 1" required>
+        </div>
+        <!-- Add the remaining input fields similarly -->
+        <div>
+            <input type="submit" value="Predict">
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

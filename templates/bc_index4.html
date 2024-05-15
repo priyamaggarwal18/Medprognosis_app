@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bc_index4.css') }}">
+    <title>Model Prediction</title>
+</head>
+<body>
+    <h2>Choose one type of prediction</h2>
+    <div class="container">
+    <button onclick="window.location.href = '{{ url_for('form1') }}';">Prompt-Based Prediction</button>
+    <button onclick="window.location.href = '{{ url_for('form') }}';">CSV-Based Prediction</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+data_copy.replace(clean_data, inplace=True)

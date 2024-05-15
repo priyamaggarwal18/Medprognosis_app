@@ -1,0 +1,61 @@
+/* static/css/style3.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 50vw;
+    margin: 2rem;
+    padding: 70px 5px;
+    background-color: black;
+    display: flex;
+    background: url(images/breast.svg) center;
+    background-size: cover;
+    color: black;
+    flex-direction: column;
+    border-radius: 20px; /* Add border radius */
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    height: 5rem;
+    width: 10rem;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: grey;
+    color: black;
+    transition: background-color 0.3s;
+    width: 30vw;
+}
+
+button:hover {
+    background-color: black;
+    transition: 0.6s all ease;
+    color: white;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

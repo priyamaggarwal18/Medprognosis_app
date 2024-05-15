@@ -1,0 +1,24 @@
+<!-- prediction_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Prediction</title>
+    <link rel="stylesheet" href="../static/css/csv_style.css">
+</head>
+<body>
+    <h2>Model Prediction Form</h2>
+    <div class="post">
+    <form action="/predict2" method="POST">
+        <br><br><br>
+        <p class="text">"radius_mean","texture_mean","perimeter_mean","area_mean","smoothness_mean","compactness_mean","concavity_mean","concave points_mean","symmetry_mean","fractal_dimension_mean","radius_se","texture_se","perimeter_se","area_se","smoothness_se","compactness_se","concavity_se","concave points_se","symmetry_se","fractal_dimension_se","radius_worst","texture_worst","perimeter_worst","area_worst","smoothness_worst","compactness_worst","concavity_worst","concave points_worst","symmetry_worst","fractal_dimension_worst"</p>
+        <label for="csv-input">Enter comma-separated feature values:</label><br>
+        <input type="text" id="csv-input" name="csv-input"><br><br>
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+    <p>{{ prediction }}</p>
+</body>
+</html>
