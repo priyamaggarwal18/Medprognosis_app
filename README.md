@@ -15,8 +15,6 @@ Foresight for medical decisions and Insurance Prediction.
 
 ## 🤖 What is Medprognosis?
 
-## 🤖 What is Medprognosis?
-
 ![medprognosis-banner](1_webpage.png)
 
 MedPrognosis is a machine learning-based system that aims to detect heart disease, kidney disease, breast cancer and diabetes using patient data. This system also says the estimated insurance costs associate with each condition. This project uses various python libraries such as Numpy for performing numerical operations, Pandas for manipulating data, Scikit-learn for algorithm of machine learning and Matplotlib for visualizing data. A dataset that has recorded patient’s information along with their respective insurance coverage was collected and preprocessed using these libraries.
