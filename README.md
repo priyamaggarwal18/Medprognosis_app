@@ -131,8 +131,10 @@ For answers to common questions about this code of conduct, see the FAQ at
 
 <div align="left">
   <img src="https://github.com/priyamaggarwal18.png" alt="Contributions" align="left" style="border-radius: 50px; width: 50px; height: 50px; border: 2px solid white;">
-  <h4 align="left">Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
+  <h4 align="left">Priyam Aggarwal (https://github.com/priyamaggarwal18)</h4>
   <br>
   <img src="https://github.com/Rashikaanand.png" alt="Contributions" align="left" style="border-radius: 50px; width: 50px; height: 50px; border: 2px solid white;">
-  <h4 align="left">Rashika Anand (https://github.com/Rashikaanand09)</h3>
+  <h4 align="left">Rashika Anand (https://github.com/Rashikaanand09)</h4>
+  <img src="https://github.com/Priyanshi-1512.png" alt="Contributions" align="left" style="border-radius: 50px; width: 50px; height: 50px; border: 2px solid white;">
+  <h4 align="left">Priyanshi Jain (https://github.com/Priyanshi-1512)</h4>
 </div>
