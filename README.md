@@ -8,10 +8,12 @@ Foresight for medical decisions and Insurance Prediction.
 </p>
 
 ## 🌐 Introduction
-- [What is MedPrognosis?](#🤖-what-is-medprognosis)
-- [How Medprognosis Works?](#🚀-how-medprognosis-works)
-- [Join the Movement: Contribute!](#💡-how-to-contribute)
-- [Our Amazing Team](#🙌-our-amazing-Team-🙌)
+- [What is MedPrognosis?](#%F0%9F%A4%96-what-is-medprognosis%3F)
+- [How Medprognosis Works?](#%F0%9F%9A%80-how-medprognosis-works)
+- [Join the Movement: Contribute!](#%F0%9F%92%A1-how-to-contribute)
+- [Our Amazing Team](#%F0%9F%99%8C-our-amazing-team-%F0%9F%99%8C)
+
+## 🤖 What is Medprognosis?
 
 ## 🤖 What is Medprognosis?
 
