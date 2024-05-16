@@ -1,21 +1,21 @@
-# 🏥MedPrognosis : Foresight for medical decisions 🏥 </h1>
+# 🏥 MedPrognosis 🏥 </h1>
 
 <div style="display: flex; justify-content: center"/>
 </div>
 
 <p style = "text-align: center"> 
-Join the revolution and simplify your journey. Use U-Move to get moving in seconds!
+Foresight for medical decisions and Insurance Prediction.
 </p>
 
 ## 🌐 Introduction
-- [What is MedPrognosis?](#🍂-what-is-medprognosis)
-- [How U-Move Works](#🚀-how-u-move-works)
+- [What is MedPrognosis?](#🤖-what-is-medprognosis)
+- [How Medprognosis Works?](#🚀-how-medprognosis-works)
 - [Join the Movement: Contribute!](#💡-how-to-contribute)
-- [Our Amazing Contributors](#🙌-our-amazing-contributors-🙌)
+- [Our Amazing Team](#🙌-our-amazing-Team-🙌)
 
 ## 🤖 What is Medprognosis?
 
-![hacktoberfest-banner](https://uno-website-assets.s3.amazonaws.com/wp-content/uploads/2023/10/02100331/1600_Hacktoberfest-scaled.jpg)
+![medprognosis-banner](1_webpage.png)
 
 MedPrognosis is a machine learning-based system that aims to detect heart disease, kidney disease, breast cancer and diabetes using patient data. This system also says the estimated insurance costs associate with each condition. This project uses various python libraries such as Numpy for performing numerical operations, Pandas for manipulating data, Scikit-learn for algorithm of machine learning and Matplotlib for visualizing data. A dataset that has recorded patient’s information along with their respective insurance coverage was collected and preprocessed using these libraries.
 
@@ -25,6 +25,9 @@ Future work includes expanding the system to detect additional diseases and inte
 ## 🚀 How Medprognosis Works
 
 Several Machine learning models like logistic regression, linear regression, SVM and KNN were trained on this preprocessed dataset. Heart disease and Breast cancer is done by using logistic regression model, SVM model is used in kidney disease prediction and KNN model is used in the prediction of diabetes.  The insurance cost prediction is done by utilizing linear regression models. The findings of this project may have a significant influence on early detection of diseases as well as management of healthcare costs. By offering accurate timely forecasts, MedPrognosis can help health care practitioners make rational choices leading to better outcomes for patients while decreasing financial burden.
+![medprognosis-banner2](2_webpage.png)
+![medprognosis-banner3](3_webpage.png)
+![medprognosis-banner4](4_webpage.png)
 
 ## 💡 How to Contribute
 
