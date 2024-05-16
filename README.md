@@ -8,10 +8,11 @@ Foresight for medical decisions and Insurance Prediction.
 </p>
 
 ## 🌐 Introduction
-- [What is MedPrognosis?](#%F0%9F%A4%96-what-is-medprognosis%3F)
-- [How Medprognosis Works?](#%F0%9F%9A%80-how-medprognosis-works)
-- [Join the Movement: Contribute!](#%F0%9F%92%A1-how-to-contribute)
-- [Our Amazing Team](#%F0%9F%99%8C-our-amazing-team-%F0%9F%99%8C)
+- What is MedPrognosis?
+- How Medprognosis Works?
+- Join the Movement: Contribute!
+- Our Amazing Team
+
 
 ## 🤖 What is Medprognosis?
 
@@ -129,16 +130,9 @@ For answers to common questions about this code of conduct, see the FAQ at
 ## 🙌 Our Amazing Team 🙌
 
 <div align="left">
-  <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Medprognosis_app" alt="Contributions" align="left">
-  <h3 align="left">Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
-</div>
-<div align="left">
-  <img src="https://contrib.rocks/image?repo=Rashikaanand09/Medprognosis_app" alt="Contributions" align="left">
-  <h3 align="left">Rashika Anand (https://github.com/Rashikaanand09)</h3>
-</div>
-Rashikaanand09
-
-<div align="left">
-  <img src="https://contrib.rocks/image?repo=priyamaggarwal18/Game_Hub1" alt="Contributions" align="left">
-  <h3 align="left">Maintained By - Priyam Aggarwal, Graphics Head Open Source Chandigarh (https://github.com/priyamaggarwal18)</h3>
+  <img src="https://github.com/priyamaggarwal18.png" alt="Contributions" align="left" style="border-radius: 50px; width: 50px; height: 50px; border: 2px solid white;">
+  <h4 align="left">Priyam Aggarwal (https://github.com/priyamaggarwal18)</h3>
+  <br>
+  <img src="https://github.com/Rashikaanand.png" alt="Contributions" align="left" style="border-radius: 50px; width: 50px; height: 50px; border: 2px solid white;">
+  <h4 align="left">Rashika Anand (https://github.com/Rashikaanand09)</h3>
 </div>
