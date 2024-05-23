@@ -1,7 +1,4 @@
 from flask import Flask, render_template, url_for ,request
-# from flask_login import UserMixin
-from flask_sqlalchemy import SQLAlchemy
-import random
 
 from static.breast_cancer import X_test, Y_test
 app = Flask(__name__)
