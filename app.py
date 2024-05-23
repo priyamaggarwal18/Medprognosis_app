@@ -160,5 +160,5 @@ def predict5():
             return render_template('diabetes.html')
        
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
     
