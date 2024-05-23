@@ -1,7 +1,6 @@
 Flask
 pandas
 numpy
-pickle5
 matplotlib
 requests
 scikit-learn
